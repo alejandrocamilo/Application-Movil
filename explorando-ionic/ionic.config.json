@@ -1,0 +1,8 @@
+{
+  "name": "Explorando ionic",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular-standalone"
+}

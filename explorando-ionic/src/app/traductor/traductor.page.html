@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Traductor</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Numeros a letras</ion-card-title>
+      <ion-card-subtitle>Numeros a letras</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+
+        <ion-item>
+          <ion-input label="Numero 1" labelPlacement="floating" placeholder="Enter text" type="number" [(ngModel)]="numero"></ion-input>
+        </ion-item>
+
+        <ion-button (click)="traducir()" expand="block">Traducir</ion-button> 
+  
+        <ion-item lines="none">
+           Resultado: {{traducir()}}
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
